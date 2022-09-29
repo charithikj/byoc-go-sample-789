@@ -20,7 +20,7 @@ FROM alpine
 # Copy the binary to the production image from the builder stage.
 COPY --from=builder /app/server /app/server
 
-USER 10014
+USER 1004
 
 # Run the web service on container startup.
 CMD ["/app/server"]
